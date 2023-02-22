@@ -315,12 +315,140 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
-  /* padding: 20px; */
   font-size: calc(10px + 2vmin);
-  color: orangered;
+  color: #121212;
 }
+
+/* Features section */
+.app-features {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-left: 2%;
+  padding-top: 3%;
+  margin: 0 auto;
+}
+
+.app-features .feature-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-features .feature-details .line-col{
+  display: flex;
+  gap: 10%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.app-features .feature-details span.line {
+  display: inline-block;
+  width: 5px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  background-color: yellowgreen;
+}
+
+.app-features .feature-details h2{
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 3%;
+}
+.app-features .feature-details .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 400px;
+  margin-top: 5%;
+  padding: 10px;
+  border: none;
+}
+.app-features .feature-details .card-img {
+  width: 50px;
+  margin: 0 auto;
+}
+
+.app-features .feature-details .card-title {
+  font-size: 30px;
+  color: yellowgreen;
+}
+.app-features .feature-details .card-text {
+  font-size: 26px;
+}
+
+.app-features .feature-details button {
+  color: yellowgreen;
+  background-color: #fff;
+  border: yellowgreen solid 1px;
+  border-radius: 20px 20px;
+  font-size: 24px;
+  align-self: center;
+  justify-self: center;
+  width: 200px
+}
+
+.app-features .feature-gallery {
+  display: flex;
+  gap: 1%;
+}
+
+.app-features .feature-gallery .gallery-img{
+  position: relative;
+  width: 33.3%;
+}
+
+.app-features .feature-gallery .gallery-img img{
+  width: 400px;
+}
+.app-features .feature-gallery .gallery-img p {
+  position: absolute;
+  color: #fff;
+  bottom: 5%;
+  left: 50%
+}
+
+.app-features .feature-insight{
+  display: flex;
+  margin-top: 5%;
+  padding: 10px;
+  gap:4%;
+}
+.app-features .feature-insight  img{
+ width: 400px;
+ order: 3;
+}
+
+.app-features .feature-insight .insight h4{
+  font-size: 38px;
+  color: #121212;
+  text-align: left;
+}
+.app-features  .insight .line-col{
+  display: flex;
+  gap: 10%;
+  justify-content: space-between;
+  position: relative;
+}
+.app-features .insight span.line{
+  display: inline-block;
+  width: 5px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  background-color: yellowgreen;
+}
+.app-features .feature-insight .insight p {
+  font-size: 28px;
+  color: #121212;
+  text-align: left;
+  padding-left: 3%;
+}
+
+
+
 
 .app-clients,
 .app-blog,
