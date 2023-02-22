@@ -13,20 +13,332 @@
   }
 }
 
-.App-header {
+/*general styling*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 74px;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff !important;
+  overflow-x: hidden;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
+
+/*Navifation bar*/
+.app-Nav{
   background-color: #282c34;
+  min-height: 10vh;
+  color: white;
+}
+
+nav.navbar {
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  transition: 0.35 ease-in-out;
+}
+
+nav.navbar.scrolled{
+  padding: 0px 0;
+  background-color: #121212;
+}
+
+nav.navbar .nav-container{
+ display: flex;
+ justify-content: space-between;
+}
+nav.navbar .navbar-brand {
+  width: 16%;
+}
+nav.navbar .navbar-brand h3{
+  width: 150px;
+  font-size: 24px;
+  color: #fff;
+}
+
+nav.navbar .navbar-nav{
+  display: flex;
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+  justify-content: right;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 400;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  padding: 0 20px;
+  font-size: 18px;
+  opacity: 0.75;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+  opacity: 1;
+  color: greenyellow !important;
+}
+
+span.navbar-text {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-text button {
+  font-weight: 700;
+  color: #fff;
+  padding: 5px 34px;
+  font-size: 18px;
+  margin-left: 18px;
+  position: relative;
+  background-color: greenyellow;
+  border-radius: 20px 20px;
+  transition: 0.3s ease-in-out;
+}
+.navbar-text button:hover{
+  opacity: 0.8;
+}
+
+.navbar-text button span {
+  z-index: 1;
+}
+
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+nav.navbar .navbar-toggler-icon {
+  width: 24px;
+  height: 17px;
+  background-image: none;
+  position: relative;
+  border-bottom: 2px solid #fff;
+  transition: all 300ms linear;
+  top: -2px;
+}
+
+nav.navbar .navbar-toggler-icon:focus {
+  border-bottom: 2px solid #fff;
+}
+
+nav.navbar .navbar-toggler-icon:after,
+nav.navbar .navbar-toggler-icon:before{
+ 
+  width: 24px;
+  height: 2px;
+  z-index: 2;
+  background-color: #fff;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  transition: all 300ms linear;
+}
+
+nav.navbar .navbar-toggler-icon:after {
+  top: 8px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after{
+  transform: rotate(45deg);
+  background-color: #fff;
+  height: 2px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+  transform:  translateY(8px) rotate(-45deg);
+  background-color: #fff;
+  height: 2px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  border-color: transparent;
+}
+
+/*Header section*/
+
+.app-header .div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0 5%;
+  margin-top: 10%;
+  width: 50%;
+}
+
+.app-header .div1 h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  text-align: left;
+  font-weight: 400;
+  color: yellowgreen;
+}
+.app-header .div1 h2 span{
+  color: #121212;
+}
+
+.app-header .div1 p{
+  font-size: 28px;
+  text-align: left;
+  color: #121212;
+}
+
+.app-header .div1 button{
+  background-color: yellowgreen;
+  padding: 5px;
+  color: #fff;
+  font-size: 26px;
+  border:none ;
+  border-radius: 20px 20px;
+}
+
+.app-header .div2 {
+  display: flex;
+  align-items: start;
+  padding: 0 5%;
+  margin-top: 10%;
+  gap: 10%;
+  /* background-image: url('./assets/images/color-sharp.png');
+  background-size: contain;
+  background-repeat: no-repeat; */
+}
+
+.app-header .div2 img{
+  width: 300px;
+  margin-left: 10%;
+}
+
+.app-header .div2 .content{
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+}
+
+.app-header .div2 .content h4{
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  color: #121212;
+}
+
+.app-header .div2 .content .line-col{
+  display: flex;
+  gap: 10%;
+  justify-content: space-between;
+  position: relative;
+}
+.app-header .div2 .content p{
+  font-size: 28px;
+  text-align: left;
+  color: #121212;
+  margin-left: 5%;
+}
+.app-header .div2 .content span.line {
+  display: inline-block;
+  width: 5px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  background-color: yellowgreen;
+
+}
+.app-header .div2 .content button{
+  background-color: #fff;
+  width: 200px;
+  padding: 5px;
+  color: yellowgreen;
+  font-size: 26px;
+  border: solid yellowgreen 1px;
+  border-radius: 20px 20px;
+}
+
+.app-header .div3 {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 5px;
+  height: 400px;
+  background-image: url('./assets/images/2022-Upcoming-Chinese-Wuxia-Xianxia-Drama-List-7-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.app-header .div3 .quote-div {
+  display: flex;
+  width: 80%;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(165, 159, 159, 0.945);
+  z-index: 5;
+}
+
+.app-header .div3 p {
+  font-size: 26px;
+  color: #fff;
+
+}
+
+.app-header,
+.app-features {
+  background-color: white;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  /* padding: 20px; */
+  font-size: calc(10px + 2vmin);
+  color: orangered;
+}
+
+.app-clients,
+.app-blog,
+.app-footer {
+  background-color: white;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: orangered;
 }
 
-.App-link {
-  color: #61dafb;
-}
+
+
+
+
 
 @keyframes App-logo-spin {
   from {
