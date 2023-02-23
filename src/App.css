@@ -415,7 +415,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .app-features .feature-gallery .gallery-img img{
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 .app-features .feature-gallery .gallery-img p {
   position: absolute;
@@ -558,7 +559,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .app-blog .card-img {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   padding: 5px;
 }
 
