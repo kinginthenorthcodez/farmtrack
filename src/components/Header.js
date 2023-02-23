@@ -1,7 +1,6 @@
 import { Quote } from 'react-bootstrap-icons';
 import image1 from '../assets/images/ComputerMap.png';
 import { FaPlayCircle } from 'react-icons/fa';
-import { FaPlay } from 'react-icons/fa';
 const Header = () => {
   return (
     <div className='app-header'>

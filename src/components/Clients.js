@@ -1,5 +1,3 @@
-import { Col, Row } from 'react-bootstrap';
-import image1 from '../assets/images/logo.svg';
 import image2 from '../assets/images/clients/De-Grendel-Logo.png';
 import image3 from '../assets/images/clients/Du-Toit-Logo-01-1024x1024.jpg';
 import image4 from '../assets/images/clients/kleine.jpg';

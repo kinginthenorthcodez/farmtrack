@@ -1,5 +1,4 @@
 import { Card, Row, Col, Container } from 'react-bootstrap';
-import image1 from '../assets/images/meter1.svg';
 import image2 from '../assets/images/MaskGroup3.png';
 import image4 from '../assets/images/MaskGroup1.png';
 import image5 from '../assets/images/MaskGroup2.png';

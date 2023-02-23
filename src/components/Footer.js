@@ -69,13 +69,13 @@ const Footer = () => {
               </Col>
               <Col>
                 <div className='socials'>
-                  <a href='#' target='_blank' rel='noreferrer'>
+                  <a href='' target='_blank' rel='noreferrer'>
                     <FaInstagram color='yellowgreen' />
                   </a>
-                  <a href='#' target='_blank' rel='noreferrer'>
+                  <a href='' target='_blank' rel='noreferrer'>
                     <FaFacebook color='yellowgreen' />
                   </a>
-                  <a href='#' target='_blank' rel='noreferrer'>
+                  <a href='' target='_blank' rel='noreferrer'>
                     <FaTwitter color='yellowgreen' />
                   </a>
                 </div>
