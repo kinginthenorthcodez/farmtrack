@@ -1,6 +1,10 @@
 import { Col, Container, Form, Row } from 'react-bootstrap';
-import socialImg1 from '../assets/images/Twitter.svg';
 import Logo from '../assets/images/farmtrackLogo.png';
+import { FaTwitter } from 'react-icons/fa';
+import { FaFacebook } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+import { FaPhoneVolume } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -15,8 +19,14 @@ const Footer = () => {
             <Row className='row-cols-md-3'>
               <Col>
                 <h4>Never miss a row again</h4>
-                <p> +27(0)28 212 3346</p>
-                <p> info@Farmtrack.co.za</p>
+                <p>
+                  {' '}
+                  <FaPhoneVolume color='yellowgreen' />
+                  +27(0)28 212 3346
+                </p>
+                <p>
+                  <FaEnvelope color='yellowgreen' /> info@Farmtrack.co.za
+                </p>
                 <p>Privacy policy</p>
               </Col>
               <Col className='latest'>
@@ -60,13 +70,13 @@ const Footer = () => {
               <Col>
                 <div className='socials'>
                   <a href='#' target='_blank' rel='noreferrer'>
-                    <img src={socialImg1} alt='instagram' />
+                    <FaInstagram color='yellowgreen' />
                   </a>
                   <a href='#' target='_blank' rel='noreferrer'>
-                    <img src={socialImg1} alt='facebook' />
+                    <FaFacebook color='yellowgreen' />
                   </a>
                   <a href='#' target='_blank' rel='noreferrer'>
-                    <img src={socialImg1} alt='twitter' />
+                    <FaTwitter color='yellowgreen' />
                   </a>
                 </div>
               </Col>

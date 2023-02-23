@@ -1,5 +1,7 @@
 import { Quote } from 'react-bootstrap-icons';
 import image1 from '../assets/images/ComputerMap.png';
+import { FaPlayCircle } from 'react-icons/fa';
+import { FaPlay } from 'react-icons/fa';
 const Header = () => {
   return (
     <div className='app-header'>
@@ -16,7 +18,9 @@ const Header = () => {
           less.
         </p>
         <button>
-          <span className=''>▶️</span>
+          <span className=''>
+            <FaPlayCircle />
+          </span>
           <span>Have a look</span>
         </button>
       </div>
