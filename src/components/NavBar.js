@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import Logo from '../assets/images/farmtrackLogo.png';
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const onUpdateActiveLink = (e) => {
@@ -10,7 +11,7 @@ const NavBar = () => {
     <Navbar expand='lg' className='app-Nav'>
       <Container fluid className='nav-container'>
         <Navbar.Brand>
-          <h3>LOGO HERE</h3>
+          <img src={Logo} alt='Logo' />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav'>
           <span className='navbar-toggler-icon'></span>
@@ -28,7 +29,7 @@ const NavBar = () => {
               home
             </Nav.Link>
             <Nav.Link
-              href='about'
+              href='#about'
               name='about'
               className={
                 activeLink === 'about' ? 'active navbar-link' : 'navbar-link'
@@ -70,7 +71,7 @@ const NavBar = () => {
               custormer stories
             </Nav.Link>
             <Nav.Link
-              href='contact'
+              href='#contacts'
               name='contact'
               className={
                 activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'

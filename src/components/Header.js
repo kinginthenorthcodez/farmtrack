@@ -1,5 +1,5 @@
 import { Quote } from 'react-bootstrap-icons';
-import image1 from '../assets/images/dev2.svg';
+import image1 from '../assets/images/ComputerMap.png';
 const Header = () => {
   return (
     <div className='app-header'>
@@ -9,10 +9,11 @@ const Header = () => {
           <span>smart farming</span>
         </h2>
         <p>
-          TypeScript is programing languege that adds to shortcommings of
-          javascript. Think of it like a sibling that is more principled than
-          the other. It is build on top of javascript, and is superset of the
-          javascript
+          Optimise the efficiency of your entire tractor fleet with cutting edge
+          GPS Technology and take the guesswork out of wine, fruit, and nut
+          production. Monitor tractor activity, spraying, and productivity -
+          intuitively, with complete accuracy in order to produce more - for
+          less.
         </p>
         <button>
           <span className=''>▶️</span>
@@ -28,10 +29,13 @@ const Header = () => {
           <div className='line-col'>
             <span className='line'></span>
             <p>
-              Decipline coding: Not for lazy programmers like John doe, who
-              wanna get done things quickly. Working on large application or
-              with other devs, you may end up wasting alot of time catching
-              those bugs but typeScript saves you there
+              With Farmtrack® you can monitor your entire tractor fleet and gain
+              powerful insight into spraying habits, driver activity, and
+              performance. Calculate fuel and water refills. Detect neglected
+              sections or missed rows. Spot movements in restricted areas and
+              manage custom reports for export compliance. Having all of this
+              information at your fingertips will revolutionise your approach to
+              your business.
             </p>
           </div>
           <button>
@@ -43,8 +47,9 @@ const Header = () => {
         <div className='quote-div'>
           <p>
             <Quote />
-            These values are a source of bugs in most javascript code as other
-            functions that might use a variable dont work on null or undefined.
+            Farmtrack® will enable you to review all your drivers’ activities
+            and carefully monitor spraying habits from one centralised web
+            dashboard.
           </p>
         </div>
       </div>

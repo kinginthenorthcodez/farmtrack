@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 /*general styling*/
 
 * {
@@ -28,7 +17,9 @@ html{
 
 body{
   font-family: Arial, Helvetica, sans-serif;
-  color: #fff !important;
+  letter-spacing: 0px;
+  background-color: #fff;
+  color: #0B1D3D !important;
   overflow-x: hidden;
   position: relative;
 }
@@ -46,7 +37,7 @@ h6 {
 
 /*Navifation bar*/
 .app-Nav{
-  background-color: #282c34;
+  background-color: #0B1D3D;
   min-height: 10vh;
   color: white;
 }
@@ -71,10 +62,9 @@ nav.navbar .nav-container{
 nav.navbar .navbar-brand {
   width: 16%;
 }
-nav.navbar .navbar-brand h3{
-  width: 150px;
+nav.navbar .navbar-brand img{
+  max-width: 200px;
   font-size: 24px;
-  color: #fff;
 }
 
 nav.navbar .navbar-nav{
@@ -182,6 +172,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /*Header section*/
 
+.app-header {
+  background-image: url('./assets/images/Group1197.png'),url('./assets/images/Path898.svg'),url('./assets/images/Group1200.svg'),url('./assets/images/Path948.svg');
+  background-position: top right,top 50px right 15px, left 25% bottom 55%,left 0px bottom 50%;
+  background-repeat: no-repeat;
+}
 .app-header .div1 {
   display: flex;
   flex-direction: column;
@@ -199,13 +194,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: yellowgreen;
 }
 .app-header .div1 h2 span{
-  color: #121212;
+  color: #0B1D3D;
 }
 
 .app-header .div1 p{
   font-size: 28px;
   text-align: left;
-  color: #121212;
+  color: #0B1D3D;
 }
 
 .app-header .div1 button{
@@ -223,14 +218,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 5%;
   margin-top: 10%;
   gap: 10%;
-  /* background-image: url('./assets/images/color-sharp.png');
-  background-size: contain;
-  background-repeat: no-repeat; */
 }
 
 .app-header .div2 img{
-  width: 300px;
-  margin-left: 10%;
+  width: 400px;
+  margin-left: 5%;
 }
 
 .app-header .div2 .content{
@@ -243,7 +235,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 30px;
   font-weight: 600;
   text-align: left;
-  color: #121212;
+  color: #0B1D3D;
 }
 
 .app-header .div2 .content .line-col{
@@ -255,7 +247,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .app-header .div2 .content p{
   font-size: 28px;
   text-align: left;
-  color: #121212;
+  color: #0B1D3D;
   margin-left: 5%;
 }
 .app-header .div2 .content span.line {
@@ -286,11 +278,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto;
   padding: 5px;
   height: 400px;
-  background-image: url('./assets/images/2022-Upcoming-Chinese-Wuxia-Xianxia-Drama-List-7-1.jpg');
+  background-image: url('./assets/images/MaskGroup1.png');
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 5%;
   margin-top: 5%;
+  mix-blend-mode: multiply;
+  opacity: 1;
 }
 
 .app-header .div3 .quote-div {
@@ -299,12 +293,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 60%;
   justify-content: center;
   align-items: center;
-  background-color: rgba(165, 159, 159, 0.945);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(43px);
+  -webkit-backdrop-filter: blur(43px);
   z-index: 5;
 }
 
 .app-header .div3 p {
-  font-size: 26px;
+  text-align: center;
+  font: italic normal 600 28px/34px SF Pro Display;
   color: #fff;
 
 }
@@ -317,7 +314,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   flex-direction: column;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #121212;
+  color: #0B1D3D;
 }
 
 /* Features section */
@@ -327,7 +324,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 90%;
   padding-left: 2%;
   padding-top: 3%;
+  padding-bottom: 5%;
   margin: 0 auto;
+  background-image: url('./assets/images/Group1200.svg'),url('./assets/images/Path248.png');
+  background-position: bottom 15% right 25%, bottom 0% right 0;
+  background-repeat: no-repeat;
 }
 
 .app-features .feature-details {
@@ -352,8 +353,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .app-features .feature-details h2{
-  font-size: 45px;
-  font-family: Arial, Helvetica, sans-serif;
+  font: italic normal 600 39px/52px Exo;
+  color: #0B1D3D;
   margin-left: 3%;
 }
 .app-features .feature-details .card {
@@ -363,7 +364,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   align-content: center;
   height: 400px;
   margin-top: 5%;
-  padding: 10px;
+  padding: 1%;
   border: none;
 }
 .app-features .feature-details .card-img {
@@ -372,11 +373,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .app-features .feature-details .card-title {
-  font-size: 30px;
-  color: yellowgreen;
+  text-align: left;
+  font: italic normal medium;
+  font-size: 38px;
+  letter-spacing: 0px;
+  color: #A3CA4F;
+  text-transform: lowercase;
+  opacity: 1;
 }
+
 .app-features .feature-details .card-text {
+  text-align: center;
   font-size: 26px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0px;
+  color: #0B1D3D;
+  opacity: 1;
 }
 
 .app-features .feature-details button {
@@ -393,11 +405,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .app-features .feature-gallery {
   display: flex;
   gap: 1%;
+  margin-bottom: 5%;
 }
 
 .app-features .feature-gallery .gallery-img{
   position: relative;
-  width: 33.3%;
+  width: 30.3%;
 }
 
 .app-features .feature-gallery .gallery-img img{
@@ -423,7 +436,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .app-features .feature-insight .insight h4{
   font-size: 38px;
-  color: #121212;
+  color: #0B1D3D;
   text-align: left;
 }
 .app-features  .insight .line-col{
@@ -442,37 +455,272 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .app-features .feature-insight .insight p {
   font-size: 28px;
-  color: #121212;
+  width: 80%;
+  color: #0B1D3D;
   text-align: left;
   padding-left: 3%;
 }
 
-
-
+/* Clients section */
 
 .app-clients,
 .app-blog,
 .app-footer {
-  background-color: white;
   min-height: 30vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  width: 90%;
+  padding-left: 2%;
+  padding-top: 3%;
+  margin: 0 auto;
   font-size: calc(10px + 2vmin);
-  color: orangered;
+  color: #121212;
 }
 
 
 
+.app-clients .clients-title{
+  display: flex;
+  gap: 10%;
+  justify-content: space-between;
+  position: relative;
+}
+.app-clients .clients-title h4{
+  font-size: 38px;
+  color: #0B1D3D;
+  margin-bottom: 5%;
+  text-align: left;
+}
 
+.app-clients .clients-title span.line{
+  display: inline-block;
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  background-color: yellowgreen;
+}
 
+.app-clients .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3%;
+  width: 100%;
+  margin-top: 50px;
+}
+.app-clients .card-container .client-card{
+  width: 250px;
+  box-shadow: 0px 3px 6px #00000029;
+  margin: 10px 10px;
+  background-color: #fff;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-clients .card-container .client-card img{
+  width: 200px;
+  height: 200px;
+}
+
+/* Blog section */
+.app-blog {
+  width: 90%;
+  padding-left: 2%;
+  padding-top: 3%;
+  margin: 0 auto;
+  color: #0B1D3D;
+}
+
+.app-blog .line-col {
+  display: flex;
+  gap: 10%;
+  justify-content: space-between;
+  position: relative;
+}
+
+.app-blog .line-col span.line{
+  display: inline-block;
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  background-color: yellowgreen;
+}
+
+.app-blog .line-col h2{
+  font-size: 38px;
+  color: #0B1D3D;
+  text-align: left;
+  margin-bottom: 3%;
+}
+.app-blog .card{
+  width: 400px;
+  height: auto;
+}
+
+.app-blog .card-img {
+  width: 400px;
+  padding: 5px;
+}
+
+.app-blog .card-title {
+  color: blueviolet;
+  font-size: 26px;
+}
+
+.app-blog .card-text {
+  color: #0B1D3D;
+  font-size: 24px;
+}
+
+.app-blog .card-body button{
+  color: yellowgreen;
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-size: 20px;
+}
+
+.app-blog button {
+  color: yellowgreen;
+  width: 200px;
+  border: yellowgreen solid 1px;
+  background: #fff;
+  border-radius: 20px 20px;
+  font-size: 26px;
+  margin: 5% auto;
+}
+
+/*Footer section */
+.wrap-footer {
+  background-color: #0B1D3D;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.app-footer {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  background-image: url('./assets/images/iStock-1082922466.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.app-footer .subcribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; 
+  width: 80%;
+  justify-content: space-around;
+  height: 200px;
+}
+.app-footer .subcribe h3{
+ font-size: 38px;
+ font-weight: 600;
+ color: #fff;
+}
+.app-footer .subcribe button{
+ border-radius: 20px 20px;
+ width: 120px;
+ height: 40px;
+ font-size: 20px;
+ padding: 5px;
+}
+
+.app-footer .info{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+  color: #fff;
+  background-image: url('./assets/images/MaskGroup6.png'),url('./assets/images/Rectangle\ 108.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app-footer .info .col {
+  padding-top: 5%;
+  width: auto;
+}
+.app-footer .info .col p{
+  font-size: 20px;
+}
+.app-footer .info .col h4 {
+  font-weight: 600;
+  margin-bottom: 5%;
+}
+
+.app-footer .info form {
+  max-width: 300px;
+}
+.app-footer .info form  h4{
+ color: yellowgreen;
+ margin-bottom: 5%;
+}
+
+.app-footer .info form .form-control{
+  width: 250px;
+  background: rgba(238, 233, 233, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+.app-footer .info form input::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+.app-footer .info form input:focus{
+  color: #121212;
+  opacity: 0.8;
+}
+
+.app-footer .info form button{
+  font-weight: 700;
+  color: #fff;
+  height: 50px;
+  background-color: yellowgreen;
+  padding: 14px 48px;
+  font-size: 20px;
+  margin-top: 25px;
+  border-radius: 20px 20px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.app-footer .socials{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+}
+
+.app-footer .socials a{
+  text-decoration: none;
+}
+.app-footer .socials a:hover {
+  opacity: 0.8;
+}
+
+.app-footer .footer-logo{
+  display: flex;
+  justify-content: space-around;
+  margin: 2% 0;
+}
+
+.app-footer .footer-logo img {
+  display: flex;
+  justify-content: space-around;
+}
+.app-footer .footer-logo p {
+ font-size: 20px;
+ text-align: left;
+ width: 50%;
 }
