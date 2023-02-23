@@ -11,7 +11,7 @@ const Blog = () => {
       </div>
       <Container>
         <Row className='row-cols-lg-3 row-cols-sm'>
-          <Col className='col-4'>
+          <Col>
             <Card className='mb-3'>
               <Card.Img src={image1} />
               <Card.Body>
@@ -25,7 +25,7 @@ const Blog = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col className='col-4'>
+          <Col>
             <Card className='mb-3'>
               <Card.Img src={image2} />
               <Card.Body>
@@ -39,7 +39,7 @@ const Blog = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col className='col-4'>
+          <Col>
             <Card className='mb-3'>
               <Card.Img src={image3} />
               <Card.Body>

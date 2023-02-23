@@ -14,7 +14,7 @@ const Features = () => {
           <h2>Features</h2>
         </div>
         <Container>
-          <Row className='row-cols-sm-2 row-cols-md-3 row-cols-lg-3'>
+          <Row className='row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
             <Col>
               <Card className='mb-3'>
                 <Card.Img src={image1} />

@@ -12,14 +12,14 @@ const Footer = () => {
         </div>
         <div className='info' id='contacts'>
           <Container>
-            <Row>
+            <Row className='row-cols-md-3'>
               <Col>
                 <h4>Never miss a row again</h4>
                 <p> +27(0)28 212 3346</p>
                 <p> info@Farmtrack.co.za</p>
                 <p>Privacy policy</p>
               </Col>
-              <Col>
+              <Col className='latest'>
                 <h4>Latest news</h4>
                 <p> this is a strory header and title</p>
                 <p> text line number 2</p>
