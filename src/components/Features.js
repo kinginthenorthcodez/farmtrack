@@ -4,6 +4,11 @@ import image2 from '../assets/images/MaskGroup3.png';
 import image4 from '../assets/images/MaskGroup1.png';
 import image5 from '../assets/images/MaskGroup2.png';
 import image3 from '../assets/images/Group296.png';
+import feature2 from '../assets/images/icons/humanPlants.jpg';
+import feature3 from '../assets/images/icons/plantMonitor.png';
+import feature4 from '../assets/images/icons/sprayfarm.jpg';
+import feature5 from '../assets/images/icons/fileReport.png';
+import { FaHandHoldingUsd } from 'react-icons/fa';
 
 const Features = () => {
   return (
@@ -17,7 +22,7 @@ const Features = () => {
           <Row className='row-cols-sm-1 row-cols-md-2 row-cols-lg-3'>
             <Col>
               <Card className='mb-3'>
-                <Card.Img src={image1} />
+                <Card.Img src={feature3} />
                 <Card.Body>
                   <Card.Title>no more missed rows</Card.Title>
                   <Card.Text>
@@ -30,12 +35,12 @@ const Features = () => {
             </Col>
             <Col>
               <Card className='mb-3'>
-                <Card.Img src={image1} />
+                <Card.Img src={feature4} />
                 <Card.Body>
-                  <Card.Title>no more missed rows</Card.Title>
+                  <Card.Title>monitor spraying speeds</Card.Title>
                   <Card.Text>
-                    Farmtrack's row counting algorithm helps you pinpoint
-                    whether others may have missed a row in a block whilist
+                    With Farmtrack’s accurate GPS technology, spraying speeds
+                    can be closely monitored within blocks to ensure correct
                     spraying.
                   </Card.Text>
                 </Card.Body>
@@ -43,39 +48,37 @@ const Features = () => {
             </Col>
             <Col>
               <Card className='mb-3'>
-                <Card.Img src={image1} />
+                <FaHandHoldingUsd size={100} style={{ marginLeft: 125 }} />
                 <Card.Body>
-                  <Card.Title>no more missed rows</Card.Title>
+                  <Card.Title>save fuel and water</Card.Title>
                   <Card.Text>
-                    Farmtrack's row counting algorithm helps you pinpoint
-                    whether others may have missed a row in a block whilist
-                    spraying.
+                    Monitor time spent on trips to diesel and water stations,as
+                    well as frequency of refills to increase efficiency and
+                    reduce waste.
                   </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
             <Col>
               <Card className='mb-3'>
-                <Card.Img src={image1} />
+                <Card.Img src={feature2} />
                 <Card.Body>
-                  <Card.Title>no more missed rows</Card.Title>
+                  <Card.Title>increase driver productivity</Card.Title>
                   <Card.Text>
-                    Farmtrack's row counting algorithm helps you pinpoint
-                    whether others may have missed a row in a block whilist
-                    spraying.
+                    Help your drivers increase productivity and skill
+                    bymonitoring behaviour and habits with our central map.
                   </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
             <Col>
               <Card className='mb-3'>
-                <Card.Img src={image1} />
+                <Card.Img src={feature5} />
                 <Card.Body>
-                  <Card.Title>no more missed rows</Card.Title>
+                  <Card.Title>reports</Card.Title>
                   <Card.Text>
-                    Farmtrack's row counting algorithm helps you pinpoint
-                    whether others may have missed a row in a block whilist
-                    spraying.
+                    View historic data and in-depth data on your farm vehicle
+                    operations with our exportable reports.
                   </Card.Text>
                 </Card.Body>
               </Card>

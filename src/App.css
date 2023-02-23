@@ -369,14 +369,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: none;
 }
 .app-features .feature-details .card-img {
-  width: 50px;
+  width: 100px;
   margin: 0 auto;
 }
 
 .app-features .feature-details .card-title {
   text-align: left;
   font: italic normal medium;
-  font-size: 38px;
+  font-size: 36px;
   letter-spacing: 0px;
   color: #A3CA4F;
   text-transform: lowercase;
