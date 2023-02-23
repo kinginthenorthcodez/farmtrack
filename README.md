@@ -12,7 +12,7 @@
 - weback
 ## Live Demo (available)
 
-Feel free to check the [Live Demo]( https://farmtrack.netlify.app)
+Feel free to check the [Live Demo](https://farmtrack.netlify.app/)
 
 # Getting Started with Create React App
 
